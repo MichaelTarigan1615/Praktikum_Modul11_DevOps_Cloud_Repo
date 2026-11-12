@@ -1,0 +1,21 @@
+# Node.js dependencies & coverage
+node_modules/
+coverage/
+npm-debug.log*
+.env
+
+# Terraform state & local directories (WAJIB: file tfstate tidak boleh dikumpul!)
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!terraform.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+tfplan
