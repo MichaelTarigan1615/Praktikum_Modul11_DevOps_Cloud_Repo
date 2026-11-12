@@ -89,7 +89,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       # Verifikasi Token OIDC GitHub (Tetap Hijau walaupun belum ada akun AWS berbayar)
-      - name: Verify GitHub OIDC Token Generation (id-token: write)
+      - name: "Verify GitHub OIDC Token Generation"
         run: |
           echo "Memverifikasi kapabilitas OpenID Connect (OIDC) GitHub Actions..."
           if [ -n "$ACTIONS_ID_TOKEN_REQUEST_URL" ]; then
